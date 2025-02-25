@@ -22,7 +22,7 @@
         public void SendNotfication(string message)
         {
             Console.WriteLine("New Notfication is sent");
-            OnNotfication(message);
+            OnNotfication?.Invoke(message);
         }
     }
     public class User
